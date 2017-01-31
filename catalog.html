@@ -18,33 +18,33 @@
           </form>
         </div>
         <div class="product-block">
-          <ul class="user-info">
-            <li>
-              <a class="bookmarks" href="#">Закладки: 0</a>
+          <ul class="product-block-list">
+            <li class="product-block-item">
+              <a class="bookmarks-link" href="#">Закладки: 0</a>
             </li>
-            <li>
-              <a class="basket-full" href="#">Корзина: 10</a>
+            <li class="product-block-item">
+              <a class="basket-full-link" href="#">Корзина: 10</a>
             </li>
-            <li>
-              <a class="order" href="#">Оформить заказ</a>
+            <li class="product-block-item">
+              <a class="order-link" href="#">Оформить заказ</a>
             </li>
           </ul>
         </div>
       </div>
 
       <div class="header-mid">
-        <div class="slogan">
+        <div class="header-slogan">
           Интернет магазин<br>
           строительных материалов<br>
           и инструментов для ремонта
         </div>
-        <div class="contact">
-          <span class="phone">+7 (812) 555-05-55</span>
-          <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <div class="header-contacts">
+          <span class="header-phone">+7 (812) 555-05-55</span>
+          <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="user-block">
-          <a class="login" href="#">Войти</a>
-          <a class="sign-up" href="#">Регистрация</a>
+          <a class="login-link" href="#">Войти</a>
+          <a class="sign-up-link" href="#">Регистрация</a>
         </div>
         <div class="user-block-private">
           <span class="user-block-data">
@@ -53,37 +53,37 @@
           </span>
           <ul class="private-list">
             <li class="private-item">
-              <a class="my-orders" href="#">Мои заказы</a>
+              <a class="my-orders-link" href="#">Мои заказы</a>
             </li>
             <li class="private-item">
-              <a class="personal-data" href="#">Личный кабинет</a>
+              <a class="personal-data-link" href="#">Личный кабинет</a>
             </li>
           </ul>
         </div>
       </div>
 
       <nav class="header-bottom">
-        <ul class="list">
-          <li class="item">
-            <a class="link" href="index.thml">Главная</a>
+        <ul class="header-bottom-list">
+          <li class="header-bottom-item">
+            <a class="header-bottom-link" href="index.html">Главная</a>
           </li>
-          <li class="item">
-            <a class="link" href="#">Компания</a>
+          <li class="header-bottom-item">
+            <a class="header-bottom-link" href="#">Компания</a>
           </li>
-          <li class="item">
-            <a class="link" href="#">Каталог</a>
+          <li class="header-bottom-item">
+            <a class="header-bottom-link" href="#">Каталог</a>
           </li>
-          <li class="item">
-            <a class="link" href="#">Новости</a>
+          <li class="header-bottom-item">
+            <a class="header-bottom-link" href="#">Новости</a>
           </li>
-          <li class="item">
-            <a class="link" href="#">Спецпредложения</a>
+          <li class="header-bottom-item">
+            <a class="header-bottom-link" href="#">Спецпредложения</a>
           </li>
-          <li class="item">
-            <a class="link" href="#">Доставка</a>
+          <li class="header-bottom-item">
+            <a class="header-bottom-link" href="#">Доставка</a>
           </li>
-          <li class="item">
-            <a class="link" href="#">Контакты</a>
+          <li class="header-bottom-item">
+            <a class="header-bottom-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -92,73 +92,94 @@
 
   <main class="container">
     <ul class="breadcrumbs">
-      <li>
-        <a class="home-link" href="index.html"></a>
+      <li class="breadcrumbs-item">
+        <a class="breadcrumbs-link-home" href="index.html"></a>
       </li>
-      <li>
-        <a href="#">Каталолог</a>
+      <li class="breadcrumbs-item">
+        <a class="breadcrumbs-link" href="#">Каталолог</a>
       </li>
-      <li>
-        <a href="#">Инструменты</a>
+      <li class="breadcrumbs-item">
+        <a class="breadcrumbs-link" href="#">Инструменты</a>
       </li>
-      <li>
-        <a>Перфораторы</a>
+      <li class="breadcrumbs-item">
+        <a class="breadcrumbs-link">Перфораторы</a>
       </li>
     </ul>
     <div class="page-title">
       <h1 class="title">Перфораторы</h1>
     </div>
 
-    <div class="sidebar">
-      <div class="filter">
+    <div class="form">
         <h2 class="filter-title">Фильтр:</h2>
         <form class="filter-form" action="#" method="post">
-          <fieldset>
-            <legend>Цена:</legend>
-            <div class="range-filter">
-              <div class="range-scale">
+          <fieldset class="field-range">
+            <legend class="field-range-title">Цена:</legend>
+            <div class="field-range-filter">
+              <div class="field-range-scale">
                 <input type="range" min="0" max="35000">
               </div>
-              <div class="price-controls">
+              <div class="field-range-price">
                 <input type="text" name="min-price" id="min-price" value="0">
                 <input type="text" name="max-price" id="max-price" value="30000">
               </div>
             </div>
           </fieldset>
 
-          <fieldset class="brand list">
-            <legend>Производители:</legend>
-            <input type="checkbox" name="BOSCH" id="BOSCH">
-              <label for="BOSCH">BOSCH</label>
-            <input type="checkbox" name="Interskol" id="Interskol">
-              <label for="Interskol">ИНТЕРСКОЛ</label>
-            <input type="checkbox" name="Makita" id="Makita" disabled>
-              <label for="Makita">MAKIta</label>
-            <input type="checkbox" name="Dewalt" id="Dewalt">
-              <label for="Dewalt">Dewalt</label>
-            <input type="checkbox" name="Hitachi" id="Hitachi">
-              <label for="Hitachi">Hitachi</label>
+          <fieldset class="field-checkbox-group">
+            <legend class="field-checkbox-title">Производители:</legend>
+            <div class="field-checkbox-wrap">
+              <label class="field-checkbox-item">
+                <input class="field-checkbox-input" type="checkbox" checked>
+                <span class="field-checkbox-text">BOSCH</span>
+              </label>
+              <label class="field-checkbox-item">
+                <input class="field-checkbox-input" type="checkbox">ИНТЕРСКОЛ</span>
+              </label>
+              <label class="field-checkbox-item">
+                <input class="field-checkbox-input" type="checkbox" checked>
+                <span class="field-checkbox-text">MAKITA</span>
+              </label>
+              <label class="field-checkbox-item">
+                <input class="field-checkbox-input" type="checkbox">
+                <span class="field-checkbox-text">DEWALT</span>
+              </label>
+              <label class="field-checkbox-item">
+                <input class="field-checkbox-input" type="checkbox">
+                <span class="field-checkbox-text">HITACHI</span>
+              </label>
+            </div>
           </fieldset>
 
-          <fieldset class="power list">
-            <legend>Питание:</legend>
-            <input type="radio" name="power" id="battery" value="battery" disabled>
-              <label for="battery">Аккумуляторные</label>
-            <input type="radio" name="power" id="net" value="net">
-              <label for="net">Сетевые</label>
+          <fieldset class="field-radio-group">
+            <legend class="field-radio-title">Питание:</legend>
+            <div class="field-radio-wrap">
+              <label class="field-radio-item">
+                <input class="field-radio-input" type="radio" value="battery" checked>
+                <span class="field-radio-text">Аккумуляторные</span>
+              </label>
+              <label class="field-radio-item">
+                <input class="field-radio-input" type="radio" value="net">
+                <span class="field-radio-text">Сетевые</span>
+              </label>
+            </div>
           </fieldset>
           <button class="filter-btn" type="submit">Показать</button>
         </form>
-      </div>
     </div>
 
-    <div class="content-catalog">
+    <section class="catalog">
       <div class="sort">
         <h2 class="sort-title">сортировка:</h2>
         <ul class="sort-list">
-          <li><a class="active" href="#">По цене</a></li>
-          <li><a href="#">По типу</a></li>
-          <li><a href="#">По функционалу</a></li>
+          <li class="sort-item-active">
+            <a class="sort-link">По цене</a>
+          </li>
+          <li class="sort-item">
+            <a class="sort-link" href="#">По типу</a>
+          </li>
+          <li class="sort-item">
+            <a class="sort-link" href="#">По функционалу</a>
+          </li>
         </ul>
       </div>
 
@@ -262,26 +283,27 @@
             <span class="btn price-btn">12500 Р.</span>
           </div>
         </article>
-        <ul class="paginations">
-          <li>
-            <a class="active" href="#">1</a>
+
+        <ul class="pagination">
+          <li class="pagination-item-active">
+            <a class="pagination-link">1</a>
           </li>
-          <li>
-            <a href="#">2</a>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
           </li>
-          <li>
-            <a href="#">3</a>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
           </li>
-          <li>
-            <a class="next" href="#">Следующая</a>
+          <li class="pagination-next">
+            <a class="pagination-link" href="#">Следующая</a>
           </li>
         </ul>
       </div>
-    </div>
+    </section>
 
     <section class="about">
       <h2 class="about-title">Пара слов о перфораторах</h2>
-      <p>
+      <p class="about-text">
         Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. <br>
         Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
       </p>
@@ -299,35 +321,35 @@
             +7 (812) 555-05-55</p>
         </div>
         <nav class="footer-nav">
-          <ul class="footer-nav-top-list">
-            <li>
-              <a href="#">Компания</a>
+          <ul class="footer-top-list">
+            <li class="footer-top-item">
+              <a class="footer-top-link" href="#">Компания</a>
             </li>
-            <li>
-              <a href="#">Новости</a>
+            <li class="footer-top-item">
+              <a class="footer-top-link" href="#">Новости</a>
             </li>
-            <li>
-              <a href="#">Каталог</a>
+            <li class="footer-top-item">
+              <a class="footer-top-link" href="#">Каталог</a>
             </li>
-            <li>
-              <a href="#">Доставка</a>
+            <li class="footer-top-item">
+              <a class="footer-top-link" href="#">Доставка</a>
             </li>
-            <li>
-              <a href="#">Контакты</a>
+            <li class="footer-top-item">
+              <a class="footer-top-link" href="#">Контакты</a>
             </li>
           </ul>
-          <ul class="footer-nav-bottom-list">
-            <li>
-              <a href="#">Материалы</a>
+          <ul class="footer-bottom-list">
+            <li class="footer-bottom-item">
+              <a class="footer-bottom-link" href="#">Материалы</a>
             </li>
-            <li>
-              <a href="#">Техника</a>
+            <li class="footer-bottom-item">
+              <a class="footer-bottom-link" href="#">Техника</a>
             </li>
-            <li>
-              <a href="#">Инструмент</a>
+            <li class="footer-bottom-item">
+              <a class="footer-bottom-link" href="#">Инструмент</a>
             </li>
-            <li>
-              <a href="#">Спецпредложения</a>
+            <li class="footer-bottom-item">
+              <a class="footer-bottom-link" href="#">Спецпредложения</a>
             </li>
           </ul>
         </nav>
